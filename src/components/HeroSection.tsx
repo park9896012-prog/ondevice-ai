@@ -2,6 +2,7 @@ import React from 'react';
 import { Language } from '../types';
 import { TRANSLATIONS } from '../data/translations';
 import { Zap, ShieldCheck, DollarSign, ArrowRight, Cpu, Sparkles } from 'lucide-react';
+import heroImage from '../assets/images/hero_ondevice_ai_1786333653054.jpg';
 
 interface HeroSectionProps {
   language: Language;
@@ -93,7 +94,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-sm overflow-hidden border border-slate-800 shadow-2xl bg-slate-900 group">
               <img
-                src="/src/assets/images/hero_ondevice_ai_1786333653054.jpg"
+                src={heroImage}
                 alt="On-Device AI NPU Neural Processing Visual"
                 className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
                 referrerPolicy="no-referrer"

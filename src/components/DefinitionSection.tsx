@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Language } from '../types';
 import { TRANSLATIONS } from '../data/translations';
 import { Server, Cpu, ShieldCheck, Zap, WifiOff, Lock, HelpCircle, Layers } from 'lucide-react';
+import privacyShieldImage from '../assets/images/privacy_shield_ai_1786333668587.jpg';
 
 interface DefinitionSectionProps {
   language: Language;
@@ -244,7 +245,7 @@ export const DefinitionSection: React.FC<DefinitionSectionProps> = ({ language }
 
           <div className="md:col-span-6 relative rounded-sm overflow-hidden border border-slate-800">
             <img
-              src="/src/assets/images/privacy_shield_ai_1786333668587.jpg"
+              src={privacyShieldImage}
               alt="Local AI Hardware Privacy Shield"
               className="w-full h-auto object-cover opacity-90"
               referrerPolicy="no-referrer"
