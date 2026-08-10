@@ -1,5 +1,8 @@
 export const TRANSLATIONS = {
   kr: {
+    meta: {
+      pageTitle: '온디바이스 AI(On-Device AI)란 무엇인가?'
+    },
     nav: {
       definition: '온디바이스 AI란?',
       models: '모델 도감',
@@ -122,6 +125,9 @@ export const TRANSLATIONS = {
     }
   },
   en: {
+    meta: {
+      pageTitle: 'What is On-Device AI?'
+    },
     nav: {
       definition: 'What is On-Device AI?',
       models: 'Model Catalog',

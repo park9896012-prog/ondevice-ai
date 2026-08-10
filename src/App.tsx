@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Language, SystemHardwareInfo } from './types';
+import { TRANSLATIONS } from './data/translations';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { DefinitionSection } from './components/DefinitionSection';
@@ -16,6 +17,10 @@ export default function App() {
   const [hardware, setHardware] = useState<SystemHardwareInfo | null>(null);
   const [activeSection, setActiveSection] = useState<string>('hero');
   const [isAdvisorOpen, setIsAdvisorOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    document.title = TRANSLATIONS[language].meta.pageTitle;
+  }, [language]);
 
   const scrollToSection = (id: string) => {
     setActiveSection(id);
