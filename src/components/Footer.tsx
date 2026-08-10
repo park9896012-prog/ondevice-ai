@@ -81,9 +81,18 @@ export const Footer: React.FC<FooterProps> = ({ language, onNavigateToSection })
         <div className="pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
           <div>© 2026 OnDevice AI Explorer & Recommender Platform. All rights reserved.</div>
           <div className="flex space-x-4">
-            <span className="hover:text-slate-300 transition-colors cursor-pointer">Privacy Policy</span>
-            <span className="hover:text-slate-300 transition-colors cursor-pointer">Terms of Service</span>
-            <span className="hover:text-slate-300 transition-colors cursor-pointer">Hardware Docs</span>
+            <a href="/privacy-policy.html" className="hover:text-slate-300 transition-colors">
+              {language === 'kr' ? '개인정보처리방침' : 'Privacy Policy'}
+            </a>
+            <a href="/terms-of-service.html" className="hover:text-slate-300 transition-colors">
+              {language === 'kr' ? '이용약관' : 'Terms of Service'}
+            </a>
+            <a
+              href="mailto:ju9896012@gmail.com"
+              className="hover:text-slate-300 transition-colors"
+            >
+              {language === 'kr' ? '문의하기' : 'Contact'}
+            </a>
           </div>
         </div>
       </div>
