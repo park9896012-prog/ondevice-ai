@@ -1,0 +1,6 @@
+{
+  "name": "On-Device AI Explorer & Model Recommender",
+  "description": "온디바이스 AI 종합 가이드, 모델 비교, 시스템 맞춤형 AI 모델 추천 및 개발자 적용 플레이북 (Multilingual KR/EN)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
